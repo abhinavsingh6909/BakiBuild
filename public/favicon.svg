@@ -1,42 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
-  <rect width="512" height="512" rx="128" fill="#121820"/>
-  <rect x="20" y="20" width="472" height="472" rx="108" fill="#192126" stroke="#384046" stroke-width="10"/>
+  <!-- Dark Background -->
+  <rect width="512" height="512" fill="#0A0A0A"/>
 
-  <!-- Bodybuilder Silhouette & Outlines -->
-  <g stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <!-- Head -->
-    <path d="M256 120 C232 120 224 140 224 165 C224 195 238 215 256 215 C274 215 288 195 288 165 C288 140 280 120 256 120 Z" fill="#192126" stroke-width="10"/>
-    
-    <!-- Neck & Traps -->
-    <path d="M228 195 Q200 220 180 235" stroke-width="10"/>
-    <path d="M284 195 Q312 220 332 235" stroke-width="10"/>
-    
-    <!-- Left Arm & Bicep Flex -->
-    <path d="M180 235 C150 225 120 200 110 170 C100 140 125 110 155 110 C175 110 185 130 180 160 C178 175 168 190 155 200 C145 208 135 220 150 240 C165 260 190 265 210 260" fill="#192126" stroke-width="11"/>
-    <!-- Left Fist -->
-    <path d="M150 110 C140 100 120 100 115 115 C110 130 125 140 135 130 Z" fill="#FFFFFF"/>
-    
-    <!-- Right Arm & Bicep Flex -->
-    <path d="M332 235 C362 225 392 200 402 170 C412 140 387 110 357 110 C337 110 327 130 332 160 C334 175 344 190 357 200 C367 208 377 220 362 240 C347 260 322 265 302 260" fill="#192126" stroke-width="11"/>
-    <!-- Right Fist -->
-    <path d="M362 110 C372 100 392 100 397 115 C402 130 387 140 377 130 Z" fill="#FFFFFF"/>
-    
-    <!-- Chest (Pecs) -->
-    <path d="M256 260 L256 340" stroke-width="8"/>
-    <path d="M256 260 C220 260 185 270 170 310 C185 330 220 340 256 340 C292 340 327 330 342 310 C327 270 292 260 256 260 Z" stroke-width="10"/>
-    <path d="M170 310 C210 335 240 335 256 335" stroke-width="8"/>
-    <path d="M342 310 C302 335 272 335 256 335" stroke-width="8"/>
-
-    <!-- Abs (6-Pack) -->
-    <path d="M220 355 H292 M215 385 H297 M222 415 H290" stroke-width="8"/>
-    <path d="M256 340 V440" stroke-width="8"/>
-
-    <!-- Lats / Torso Contour -->
-    <path d="M170 310 C160 340 180 390 200 440" stroke-width="10"/>
-    <path d="M342 310 C352 340 332 390 312 440" stroke-width="10"/>
+  <!-- GymHub Logo at top -->
+  <g transform="translate(68, 50)">
+    <!-- 'Gym' Text -->
+    <text x="0" y="70" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="76" fill="#FFFFFF">Gym</text>
+    <!-- 'Hub' Orange Badge -->
+    <rect x="180" y="0" width="190" height="90" rx="20" fill="#F76B1C"/>
+    <!-- 'Hub' Text -->
+    <text x="202" y="70" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="76" fill="#0A0A0A">Hub</text>
   </g>
 
-  <!-- Accent Glow Lines -->
-  <path d="M140 145 C150 135 165 140 162 158" stroke="#A1E510" stroke-width="8" stroke-linecap="round"/>
-  <path d="M372 145 C362 135 347 140 350 158" stroke="#A1E510" stroke-width="8" stroke-linecap="round"/>
+  <!-- Flexing Bodybuilder Silhouette -->
+  <g stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Head -->
+    <ellipse cx="256" cy="205" rx="30" ry="38" fill="#0A0A0A" stroke-width="8"/>
+    
+    <!-- Neck & Traps -->
+    <path d="M232 235 Q205 255 180 270" stroke-width="8"/>
+    <path d="M280 235 Q307 255 332 270" stroke-width="8"/>
+    
+    <!-- Left Arm & Bicep Flex -->
+    <path d="M180 270 C150 255 115 220 105 185 C95 150 120 120 155 120 C175 120 188 140 182 175 C178 195 165 210 150 225 C140 235 130 250 150 275 C168 298 195 305 218 298" fill="#0A0A0A" stroke-width="9"/>
+    <!-- Left Fist -->
+    <path d="M155 120 C145 108 122 108 115 125 C108 142 125 155 138 142 Z" fill="#FFFFFF"/>
+    
+    <!-- Right Arm & Bicep Flex -->
+    <path d="M332 270 C362 255 397 220 407 185 C417 150 392 120 357 120 C337 120 324 140 330 175 C334 195 347 210 362 225 C372 235 382 250 362 275 C344 298 317 305 294 298" fill="#0A0A0A" stroke-width="9"/>
+    <!-- Right Fist -->
+    <path d="M357 120 C367 108 390 108 397 125 C404 142 387 155 374 142 Z" fill="#FFFFFF"/>
+    
+    <!-- Chest (Pecs) -->
+    <path d="M256 295 L256 385" stroke-width="7"/>
+    <path d="M256 295 C215 295 175 308 158 350 C175 375 215 385 256 385 C297 385 337 375 354 350 C337 308 297 295 256 295 Z" stroke-width="9"/>
+    <path d="M158 350 C205 380 238 380 256 380" stroke-width="7"/>
+    <path d="M354 350 C307 380 274 380 256 380" stroke-width="7"/>
+
+    <!-- Abs (6-Pack) -->
+    <path d="M216 405 H296 M210 440 H302 M218 475 H294" stroke-width="7"/>
+    <path d="M256 385 V500" stroke-width="7"/>
+
+    <!-- Lats / Torso Outlines -->
+    <path d="M158 350 C148 385 170 440 195 495" stroke-width="8"/>
+    <path d="M354 350 C364 385 342 440 317 495" stroke-width="8"/>
+  </g>
 </svg>
