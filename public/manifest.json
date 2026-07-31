@@ -1,0 +1,27 @@
+{
+  "short_name": "BakiBuild",
+  "name": "BakiBuild",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#192126",
+  "theme_color": "#192126",
+  "display": "standalone",
+  "orientation": "portrait"
+}
