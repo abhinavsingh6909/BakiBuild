@@ -235,7 +235,7 @@ export function TodayTab({ workouts, onSaveWorkouts }) {
           <input
             type="text"
             className="input-field"
-            placeholder="Add exercise (e.g. Incline chest press)"
+            placeholder="Add exercise (e.g. Bench press)"
             value={newExerciseName}
             onChange={(e) => setNewExerciseName(e.target.value)}
           />
@@ -353,7 +353,7 @@ export function TodayTab({ workouts, onSaveWorkouts }) {
                       })
                     }
                   />
-                  <button type="submit" className="btn-primary" style={{ padding: '8px 14px', fontSize: '0.85rem' }}>
+                  <button type="submit" className="btn-primary" style={{ padding: '8px 12px', fontSize: '0.85rem' }}>
                     Log set
                   </button>
                 </form>

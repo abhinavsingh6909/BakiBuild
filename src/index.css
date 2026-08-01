@@ -263,6 +263,7 @@ html, body {
   flex-direction: column;
   gap: 12px;
   transition: border-color 0.2s ease;
+  overflow: hidden; /* Prevents contents from bleeding out */
 }
 
 .card-title {
@@ -291,21 +292,26 @@ html, body {
   color: var(--color-neon-lime);
 }
 
-/* Input & Button Styles */
+/* Input & Button Styles - Mobile Responsive Fix */
 .input-group {
   display: flex;
   gap: 8px;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
 }
 
 .input-field {
-  flex: 1;
+  flex: 1 1 0px;
+  min-width: 0; /* Prevents text overflow */
+  width: 100%;
   background: var(--bg-input);
   border: 1px solid var(--border-color);
   border-radius: 10px;
-  padding: 10px 14px;
+  padding: 10px 12px;
   color: var(--text-primary);
   font-family: var(--font-sans);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   outline: none;
   transition: all 0.2s ease;
 }
@@ -320,14 +326,16 @@ html, body {
 }
 
 .btn-primary {
+  flex-shrink: 0; /* Prevents button from shrinking or overflowing */
+  white-space: nowrap;
   background: linear-gradient(135deg, var(--color-neon-lime), var(--color-light-volt));
   color: var(--color-midnight-bg);
   font-family: var(--font-sans);
   font-weight: 900;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   border: none;
   border-radius: 10px;
-  padding: 10px 18px;
+  padding: 10px 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -341,14 +349,16 @@ html, body {
 }
 
 .btn-secondary {
+  flex-shrink: 0;
+  white-space: nowrap;
   background: var(--bg-input);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   border-radius: 10px;
-  padding: 8px 14px;
+  padding: 8px 12px;
   cursor: pointer;
   transition: background 0.2s ease;
 }
@@ -358,6 +368,7 @@ html, body {
 }
 
 .btn-icon {
+  flex-shrink: 0;
   background: none;
   border: none;
   color: var(--text-muted);
@@ -416,6 +427,7 @@ html, body {
   display: flex;
   align-items: center;
   gap: 6px;
+  overflow-x: auto;
 }
 
 .ghost-line-label {
@@ -423,6 +435,7 @@ html, body {
   color: var(--text-muted);
   text-transform: uppercase;
   font-size: 0.7rem;
+  flex-shrink: 0;
 }
 
 /* Set Rows */
